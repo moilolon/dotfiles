@@ -7,7 +7,7 @@ PS1='\[\033]0;\W - Bash\007\]'
 
 if [ "$USE_NERD_FONTS" = "true" ]; then
     ARROW=""
-    GIT_ICON="⛏️ "
+    GIT_ICON="󰘬"
 else
     ARROW=""
     GIT_ICON=""
