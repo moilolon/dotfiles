@@ -1,0 +1,13 @@
+# --- bashrc ---
+# Sourced from ~/.bashrc by the block install.sh adds.
+
+# Prevent double loading
+if [ -n "$DOTFILES_LOADED" ]; then return; fi
+export DOTFILES_LOADED=1
+
+DOTFILES_BASH_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+
+# Custom prompt (set USE_NERD_FONTS=false before this line for ASCII icons)
+if [ -f "$DOTFILES_BASH_DIR/prompt.sh" ]; then
+    source "$DOTFILES_BASH_DIR/prompt.sh"
+fi
