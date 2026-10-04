@@ -14,7 +14,6 @@ else
 fi
 
 DIR_ICON="📂"
-HOST_ICON="💻"
 USER_ICON="👤"
 PROMPT_SYMBOL="🚀"
 
@@ -47,7 +46,12 @@ build_ps1() {
     local GIT_BRANCH=""
     local git_dir=$(git rev-parse --git-dir 2>/dev/null)
     if [ -n "$git_dir" ]; then
-        GIT_BRANCH=$(sed -e 's,.*/\(.*\),\1,' < "$git_dir/HEAD" 2>/dev/null)
+        local head=""
+        read -r head < "$git_dir/HEAD" 2>/dev/null
+        case "$head" in
+            "ref: refs/heads/"*) GIT_BRANCH="${head#ref: refs/heads/}" ;; # keeps slashes: feature/x
+            ?*) GIT_BRANCH="${head:0:7}" ;; # detached HEAD: short commit hash
+        esac
     fi
 
     if [ -n "$GIT_BRANCH" ]; then
