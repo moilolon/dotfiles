@@ -1,6 +1,6 @@
 <div align="center">
 
-# <img src="assets/icon.png" alt="" width="40" align="center"> dotfiles
+# <img src="assets/icon.png" alt="" width="40" align="absmiddle"> dotfiles
 
 **A two-line, powerline-style prompt for Git Bash on Windows**
 
