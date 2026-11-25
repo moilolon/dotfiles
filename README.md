@@ -8,7 +8,7 @@
 [![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![Nerd Fonts](https://img.shields.io/badge/Nerd%20Fonts-ready-7F5AF0?style=for-the-badge&logo=fontawesome&logoColor=white)](https://www.nerdfonts.com/)
 
-<img src="assets/prompt.png" alt="The prompt in Windows Terminal: time, user@host, folder and git branch segments" width="860">
+<img src="assets/cover.png" alt="The name beside a terminal with the prompt's time, user@host, folder and git branch segments" width="820">
 
 </div>
 

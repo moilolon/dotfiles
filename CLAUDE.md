@@ -14,7 +14,9 @@ The details below are for Claude.
 - `bash/bashrc` is the loader (guards against double loading); `bash/prompt.sh` is the prompt:
   icons (`DIR_ICON`, `USER_ICON`, `PROMPT_SYMBOL`, `GIT_ICON`, `ARROW`), colours (`BG_*`,
   `ARR*`, 256-colour palette) and the layout in `build_ps1()`.
-- `assets/prompt.png` is the README screenshot.
+- `assets/cover.png` is the README cover, drawn from shapes by `assets/draw-cover.ps1`
+  (`powershell -NoProfile -File assets/draw-cover.ps1`) in the colours of `bash/prompt.sh`;
+  redraw it when the prompt changes.
 
 ## Git
 
