@@ -1,7 +1,20 @@
 # dotfiles — Project Memory
 
 A two-line prompt for Git Bash on Windows, installed as one marked block in `~/.bashrc` by
-`install.sh`. What each file does is in `README.md`.
+`install.sh`.
+
+`README.md` is the cover for visitors, laid out like every moilolon repo: *What this is*, *How
+it works*, *Getting started* and the shared footer, with no folder tree, long code or roadmap.
+The details below are for Claude.
+
+## Structure
+
+- `install.sh` / `uninstall.sh` add and remove the block between `# >>> moilolon/dotfiles >>>`
+  and `# <<< moilolon/dotfiles <<<` in `~/.bashrc`; both are idempotent.
+- `bash/bashrc` is the loader (guards against double loading); `bash/prompt.sh` is the prompt:
+  icons (`DIR_ICON`, `USER_ICON`, `PROMPT_SYMBOL`, `GIT_ICON`, `ARROW`), colours (`BG_*`,
+  `ARR*`, 256-colour palette) and the layout in `build_ps1()`.
+- `assets/prompt.png` is the README screenshot.
 
 ## Git
 
