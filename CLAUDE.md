@@ -14,8 +14,9 @@ The details below are for Claude.
 - `bash/bashrc` is the loader (guards against double loading); `bash/prompt.sh` is the prompt:
   icons (`DIR_ICON`, `USER_ICON`, `PROMPT_SYMBOL`, `GIT_ICON`, `ARROW`), colours (`BG_*`,
   `ARR*`, 256-colour palette) and the layout in `build_ps1()`.
-- `assets/cover.png` is the README cover, drawn from shapes by `assets/draw-cover.ps1`
-  (`powershell -NoProfile -File assets/draw-cover.ps1`) in the colours of `bash/prompt.sh`;
+- `assets/draw-images.ps1` (`powershell -NoProfile -File assets/draw-images.ps1`) draws, from
+  shapes, the README cover (`cover.png`), the icon (`icon.png`, also the project's icon in
+  Orca) and the GitHub social preview (`social-preview.png`, uploaded by hand in Settings) in the colours of `bash/prompt.sh`;
   redraw it when the prompt changes.
 
 ## Git
