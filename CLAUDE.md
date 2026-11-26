@@ -18,6 +18,10 @@ The details below are for Claude.
   shapes, the README cover (`cover.png`), the icon (`icon.png`, also the project's icon in
   Orca) and the GitHub social preview (`social-preview.png`, uploaded by hand in Settings) in the colours of `bash/prompt.sh`;
   redraw it when the prompt changes.
+- `test/install.sh` (`bash test/install.sh`) installs, loads and uninstalls the prompt in a
+  throwaway `HOME` and checks each step. `.github/workflows/checks.yml` (job `checks`) runs it
+  with ShellCheck on every pull request, on `windows-latest` with Git Bash, the shell the prompt
+  is for. A new script goes into its ShellCheck line.
 
 ## Git
 

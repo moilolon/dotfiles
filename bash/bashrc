@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 # --- bashrc ---
 # Sourced from ~/.bashrc by the block install.sh adds.
 
@@ -9,5 +10,6 @@ DOTFILES_BASH_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 
 # Custom prompt (set USE_NERD_FONTS=false before this line for ASCII icons)
 if [ -f "$DOTFILES_BASH_DIR/prompt.sh" ]; then
+    # shellcheck source=SCRIPTDIR/prompt.sh
     source "$DOTFILES_BASH_DIR/prompt.sh"
 fi

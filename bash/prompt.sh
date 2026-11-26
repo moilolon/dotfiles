@@ -1,9 +1,10 @@
+# shellcheck shell=bash
 # --- prompt.sh ---
 # 1. WINDOW TITLE
 PS1='\[\033]0;\W - Bash\007\]'
 
 # 2. ICON DEFINITIONS
-: ${USE_NERD_FONTS:=true}
+: "${USE_NERD_FONTS:=true}"
 
 if [ "$USE_NERD_FONTS" = "true" ]; then
     ARROW=""
@@ -44,7 +45,8 @@ build_ps1() {
 
     # Git Branch detection (Direct file read for performance)
     local GIT_BRANCH=""
-    local git_dir=$(git rev-parse --git-dir 2>/dev/null)
+    local git_dir
+    git_dir=$(git rev-parse --git-dir 2>/dev/null)
     if [ -n "$git_dir" ]; then
         local head=""
         read -r head < "$git_dir/HEAD" 2>/dev/null
