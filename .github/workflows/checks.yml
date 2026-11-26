@@ -1,4 +1,4 @@
-name: checks
+name: Run the checks
 
 # On the real thing: Git Bash on Windows, the shell this prompt is for. ShellCheck on every
 # script, then test/install.sh installs, loads and uninstalls the prompt in a throwaway HOME.
