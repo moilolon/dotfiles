@@ -27,7 +27,8 @@ The details below are for Claude.
   attribution.
 - **Branches:** `<type>/<short-description>`, lowercase kebab-case, off `main`. Types: `feature`,
   `bugfix`, `docs`, `style`, `refactor`, `chore`.
-- **Pull requests:** title like a commit; body with *What changes*, *Why* and *How to check it*.
+- **Pull requests:** title like a commit; body with *What changes*, *Why* and *How to check it*;
+  assigned to `moilolon` (the labeler workflow does it if missing, and Dependabot's come assigned).
   Merged by squash, with the PR title and body as the commit.
 - **`gh`:** always as `GH_TOKEN=$(gh auth token --user moilolon) gh …`, command by command. gh's
   active account is the work one, which must not act on this repo; do not switch it. `git`
